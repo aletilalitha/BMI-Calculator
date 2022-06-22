@@ -6,12 +6,12 @@ function BMICalculate() {
     let weight = parseInt(document.querySelector(".weight").value);
     let resultValue = document.querySelector(".result")
     if (height === "" || isNaN(height)) {
-       // alert("please Enter the Height");
-         resultValue.innerHTML="please enter the height"
+        alert("please Enter the Height in Cm");
+        // resultValue.innerHTML="please enter the height"
     }
     else if (weight === "" || isNaN(weight)) {
-       // alert("please enter the weight")
-        resultValue.innerHTML="please enter the weight"
+        alert("please enter the Weight in Kgs")
+        //resultValue.innerHTML="please enter the weight"
     }
     else {
          let bmi = (weight / ((height * height) / 10000)).toFixed(2)
